@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Table{
+  display: block;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Table th{
+  border-bottom: 1px solid #364043;
+  color: aqua;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-top: 1px solid #364043;
+  border-left: 1px solid #364043;
+  border-right: 1px solid #364043;
+}
+
+.Table td{
+  color: aliceblue;
+  text-align: center;
+  border-bottom: 1px solid #364043;
+  border-left: 1px solid #364043;
+  border-right: 1px solid #364043;
+}
+
+.Table tbody tr{
+  transition: background 0.25s ease;
+}
+
+.Table tbody tr:hover{
+  background: #61dafb;
+}
+
+.Table tr{
+  padding-bottom: 10px;
+}
+
+.Table td{
+  padding: 10px 10px 0;
+  &:before{
+    text-align: center;
+    content: attr(data-title);
+    color: lightblue;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    display: block;
+  }
+}
+
+.tableDiv{
+  margin: auto;
+  width: 70%;
+}
+
+.headerDiv h1{
+  font-family: "Roboto Mono", monospace;
+  color: aqua;
+  font-weight: 200;
+  text-align: center;
+  overflow: hidden;
+  border-right: 1px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  30% { border-color: rgb(255, 255, 255) }
+}
+
+
+
+
+
