@@ -5,6 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
+plt.style.use('dark_background')
 
 for dirname, _, filenames in os.walk('Blood_samples_dataset_balanced_2(f).csv.zip'):
     for filename in filenames:
@@ -54,3 +55,4 @@ plt.show();
 
 sns.heatmap(x.corr(),square=True);
 plt.show();
+
